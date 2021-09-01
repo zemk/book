@@ -1,8 +1,26 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Museo Sans 700";
+  src: url("MuseoSansCyrl-900.eot");
+  src: url("../fonts/MuseoSansCyrl-700.woff") format("woff"),
+    url("../fonts/MuseoCyrl-700.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  /*  готов ли к использованию. шрифт */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Museo Sans 300";
+
+  src: url("../fonts/MuseoCyrl-300.woff") format("woff"),
+    url("../fonts/MuseoCyrl-300.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: sans-serif;
+  font-family: "Museo Sans 300", sans-serif;
   color: #202020;
 }
 /* Шапка сайта */
