@@ -23,6 +23,13 @@ body {
   font-family: "Museo Sans 300", sans-serif;
   color: #202020;
 }
+img {
+  max-width: 100%;
+}
+.section-titel {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
 /* Шапка сайта */
 .header {
   width: 100%;
@@ -90,6 +97,7 @@ body {
   margin-bottom: 22px;
   display: block;
 }
+
 .title {
   font-size: 54px;
   font-weight: 700;
@@ -192,12 +200,12 @@ body {
 .author-name {
   margin: 0;
   font-size: 16px;
-  font-size: 700px;
+  font-weight: 700;
   margin-bottom: 14px;
 }
 .author-link {
   font-size: 16px;
-  font-size: 700px;
+  font-weight: 700;
   text-decoration: none;
   color: inherit;
 }
@@ -254,4 +262,75 @@ body {
   border: 1px solid #eeeeee;
   background-color: #fff;
   padding: 18px;
+}
+@media (max-width: 1200px) {
+  .header-container,
+  .hero-container,
+  .about-container.about-author,
+  .readres-container,
+  .footer-container {
+    max-width: 960px;
+  }
+
+  .image-block {
+    margin-right: 30px;
+    min-width: 390px;
+    max-width: 390px;
+    /* flex-block */
+  }
+  .about-book {
+    max-width: 365px;
+  }
+  /*  Читатели  */
+  .readers {
+    padding-top: 94px;
+  }
+  .reader {
+    width: 139px;
+    height: 139px;
+  }
+}
+@media (max-width: 992px) {
+  .header-container,
+  .hero-container,
+  .about-container.about-author,
+  .readres-container,
+  .footer-container {
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  .image-block {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .author {
+    margin-bottom: 13px;
+    font-size: 22px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .info {
+    margin-bottom: 39px;
+  }
+  .info-text {
+    font-size: 16px;
+  }
+  .agem,
+  .format {
+    flex-grow: 1;
+  }
+  .price {
+    margin-bottom: 49px;
+  }
+  .button {
+    padding: 20px 40px;
+  }
 }
